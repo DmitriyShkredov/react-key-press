@@ -1,23 +1,20 @@
-import logo from "./logo.svg";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Типичный веб разработчик</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Отследить нажатие клавиш в React.js
-        </a>
-      </header>
-    </div>
-  );
+  const [key, setKey] = useState("Press Key");
+
+  const onKey = (event) => {
+    setKey(event.key);
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+    };
+  }, []);
+  return <div className="App">{key}</div>;
 }
 
 export default App;
