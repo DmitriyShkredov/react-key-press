@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-key-press/static/css/main.bfd6fd34.css",
+    "main.js": "/react-key-press/static/js/main.9e36c3d9.js",
+    "index.html": "/react-key-press/index.html",
+    "main.bfd6fd34.css.map": "/react-key-press/static/css/main.bfd6fd34.css.map",
+    "main.9e36c3d9.js.map": "/react-key-press/static/js/main.9e36c3d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfd6fd34.css",
+    "static/js/main.9e36c3d9.js"
+  ]
+}
